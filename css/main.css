@@ -1,0 +1,67 @@
+body {
+    font-family: "Open Sans";
+    font-size: 2em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    margin-top: 7%;
+}
+
+.title h1 {
+    font-size: 8.0rem;
+    color: #0084FF;
+}
+
+ol li {
+    font-size: 4.0rem;
+}
+
+.get-started-img-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+    background: url(../images/getting-started.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+
+    /* Maintain a height:width ratio of 1.734*/
+    width: 400px;
+    height: 694px;
+}
+
+.business-name-header {
+    position: relative;
+    top: 5px;
+    height: 1.5rem;
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.business-name-input {
+    position: relative;
+    top: 60px;
+    border: 0.5px solid lightgray;
+    font-size: 3.0rem;
+    height: 3.0rem;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.get-started-text {
+    position: relative;
+    top: 350px;
+    font-size: 1.5rem;
+    color: gray;
+    width: 340px;
+    padding: 10px;
+    text-align: center;
+    resize: vertical;
+    max-height: 150px;
+}
