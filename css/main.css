@@ -35,6 +35,21 @@ ol li {
     height: 694px;
 }
 
+.call-to-action-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+    background: url(../images/getting-started.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+
+    /* Maintain a height:width ratio of 1.734*/
+    width: 400px;
+    height: 694px;
+}
+
 .business-name-header {
     position: relative;
     top: 5px;
@@ -62,6 +77,20 @@ ol li {
     width: 340px;
     padding: 10px;
     text-align: center;
+    resize: vertical;
+    max-height: 150px;
+}
+
+.call-to-action-header {
+    align-self: flex-start;
+    position: relative;
+    top: 350px;
+    left: 10px;
+    font-size: 1.5rem;
+    color: gray;
+    width: 140px;
+    padding: 10px;
+    text-align: left;
     resize: vertical;
     max-height: 150px;
 }
