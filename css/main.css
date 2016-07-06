@@ -40,7 +40,7 @@ ol li {
     align-items: center;
     flex-direction: column;
     margin: 30px auto;
-    background: url(../images/getting-started.png);
+    background: url(../images/inital-msg.png);
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid gray;
@@ -81,16 +81,42 @@ ol li {
     max-height: 150px;
 }
 
-.call-to-action-header {
+.call-to-action-title {
+    border: none;
     align-self: flex-start;
     position: relative;
-    top: 350px;
-    left: 10px;
-    font-size: 1.5rem;
-    color: gray;
-    width: 140px;
-    padding: 10px;
+    top: 210px;
+    left: 60px;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 900;
+    width: 270px;
+    padding: 5px;
     text-align: left;
-    resize: vertical;
-    max-height: 150px;
+    resize: none;
+    min-height: 20px;
+}
+
+.call-to-action-button {
+    border: none;
+    align-self: flex-start;
+    position: relative;
+    top: 247px;
+    left: 60px;
+    font-size: 1.75rem;
+    color: #1787FB;
+    font-weight: 500;
+    width: 270px;
+    padding: 5px;
+    text-align: center;
+    resize: none;
+    min-height: 43px;
+}
+
+.button2 {
+    top: 233px;
+}
+
+.button3 {
+    top: 222px;
 }
