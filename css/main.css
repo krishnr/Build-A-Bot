@@ -40,7 +40,7 @@ ol li {
     align-items: center;
     flex-direction: column;
     margin: 30px auto;
-    background: url(../images/inital-msg.png);
+    background: url(../images/initial-msg.png);
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid gray;
@@ -81,42 +81,73 @@ ol li {
     max-height: 150px;
 }
 
+.call-to-action-image {
+    border: none;
+    align-self: flex-start;
+    position: relative;
+    top: 55px;
+    left: 62px;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 900;
+    width: 270px;
+    padding: 5px;
+    text-align: left;
+    resize: vertical;
+    min-height: 136px;
+}
+
 .call-to-action-title {
     border: none;
     align-self: flex-start;
     position: relative;
-    top: 210px;
-    left: 60px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: black;
     font-weight: 900;
     width: 270px;
     padding: 5px;
     text-align: left;
     resize: none;
-    min-height: 20px;
+}
+
+.call-to-action-title-encapsulate {
+    border: none;
+    align-self: flex-start;
+    position: relative;
+    top: 55px;
+    left: 62px;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 900;
+    width: 270px;
+    padding: 5px;
+    text-align: left;
+    resize: vertical;
+    min-height: 105px;
+}
+
+.call-to-action-button-encapsulate {
+    border: none;
+    background: transparent;
+    align-self: flex-start;
+    position: relative;
+    top: 60px;
+    left: 62px;
+    width: 270px;
+    padding: 5px;
 }
 
 .call-to-action-button {
     border: none;
-    align-self: flex-start;
+    background: transparent;
     position: relative;
-    top: 247px;
-    left: 60px;
+    top: 5px;
     font-size: 1.75rem;
     color: #1787FB;
     font-weight: 500;
     width: 270px;
-    padding: 5px;
     text-align: center;
     resize: none;
-    min-height: 43px;
-}
-
-.button2 {
-    top: 233px;
-}
-
-.button3 {
-    top: 222px;
+    min-height: 35px;
+    max-height: 50px;
 }
