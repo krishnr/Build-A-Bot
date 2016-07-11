@@ -288,7 +288,7 @@ ol li {
     font-size: 1.5rem;
     color: black;
     font-weight: 900;
-    width: 250px;
+    width: 200px;
     padding: 5px;
     left: 15px;
     top: 15px;
@@ -315,13 +315,13 @@ ol li {
     border: none;
     background: transparent;
     position: relative;
-    top: 5px;
+    top: 22px;
+    margin-bottom: 35px;
     font-size: 1.75rem;
     color: #1787FB;
     font-weight: 500;
-    width: 270px;
+    width: 250px;
     text-align: center;
     resize: none;
-    min-height: 35px;
-    max-height: 50px;
+    max-height: 23px;
 }
