@@ -108,8 +108,9 @@ ol li {
     width: 270px;
     padding: 5px;
     text-align: left;
-    resize: vertical;
     min-height: 136px;
+    border: 1px solid #eee;
+    border-radius: 10px 10px 0 0;
 }
 
 .call-to-action-title {
@@ -123,6 +124,40 @@ ol li {
     padding: 5px;
     text-align: left;
     resize: none;
+}
+
+.image-preview {
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #ecf0f1;
+}
+
+.image-preview input {
+    line-height: 200px;
+    font-size: 200px;
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+}
+
+.image-preview label {
+    position: absolute;
+    opacity: 0.2;
+    cursor: pointer;
+    background-color: #bbb;
+    color: black;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
 }
 
 .call-to-action-title-encapsulate {
@@ -168,19 +203,19 @@ ol li {
 }
 
 .carousel-image {
-    border: none;
+    border: 1px solid #eee;
     align-self: flex-start;
     position: relative;
-    top: 0px;
-    left: 10px;
+    margin-top: 1px;
     font-size: 1.5rem;
     color: black;
     font-weight: 900;
-    width: 250px;
+    width: 262px;
     padding: 5px;
     text-align: left;
-    resize: vertical;
-    min-height: 136px;
+    min-height: 131px;
+    margin-left: 2px;
+    border-radius: 10px 10px 0 0;
 }
 
 .carousel-title {

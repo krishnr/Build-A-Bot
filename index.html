@@ -44,6 +44,7 @@
     <div class="row objective u-max-full-width text-center">
       <label for="objective-dropdown">I want to create a bot that:</label>
       <select class="u-max-full-width objective-dropdown">
+        <option></option>
         <option value="lead-gen">Generates leads</option>
         <option value="product-sales">Sells products</option>
       </select>
@@ -63,7 +64,10 @@
         <p> This message should be directly related to your Facebook ad or your website's value prop. The CTA can be something like "Buy now!".</p>
         <div class='call-to-action-container'>
           <div class='business-name-header'>Acme Corp</div>
-          <div class='call-to-action-image'></div>
+          <div class='call-to-action-image image-preview' id='image-preview-1'>
+            <label for="image-upload" class='image-label' id="image-label-1">Upload Image</label>
+            <input type="file" name="image" class='image-upload' id="image-upload-1" />
+          </div>
           <div class ='call-to-action-title-encapsulate'>
             <textarea class='call-to-action-title' placeholder='Enter a Heading' rows= '2' maxlength="80"></textarea>
           </div>
@@ -77,7 +81,10 @@
         <li>Message Carousel</li>
         <p>Use a carousel of messages to provide your users with options and interactive buttons.</p>
         <div class='carousel-container'>
-          <div class='carousel-image'></div>
+          <div class='carousel-image image-preview' id='image-preview-2'>
+            <label for="image-upload" class='image-label' id="image-label-2">Upload Image</label>
+            <input type="file" name="image" class='image-upload' id="image-upload-2" />
+          </div>
           <div class ='carousel-title-encapsulate'>
             <textarea class='carousel-title' placeholder='Enter a Heading' rows= '2' maxlength="80"></textarea>
           </div>
@@ -88,7 +95,10 @@
           </div>
         </div>
         <div class='carousel-container'>
-          <div class='carousel-image'></div>
+          <div class='carousel-image image-preview' id='image-preview-3'>
+            <label for="image-upload" class='image-label' id="image-label-3">Upload Image</label>
+            <input type="file" name="image" class='image-upload' id="image-upload-3" />
+          </div>
           <div class ='carousel-title-encapsulate'>
             <textarea class='carousel-title' placeholder='Enter a Heading' rows= '2' maxlength="80"></textarea>
           </div>
@@ -99,7 +109,10 @@
           </div>
         </div>
         <div class='carousel-container'>
-          <div class='carousel-image'></div>
+          <div class='carousel-image image-preview' id='image-preview-4'>
+            <label for="image-upload" class='image-label' id="image-label-4">Upload Image</label>
+            <input type="file" name="image" class='image-upload' id="image-upload-4" />
+          </div>
           <div class ='carousel-title-encapsulate'>
             <textarea class='carousel-title' placeholder='Enter a Heading' rows= '2' maxlength="80"></textarea>
           </div>
@@ -127,7 +140,10 @@
         <p> This message should be directly related to your Facebook ad or your website's value prop. The CTA can be something like "Get a quote".</p>
         <div class='call-to-action-container'>
           <div class='business-name-header'>Acme Corp</div>
-          <div class='call-to-action-image'></div>
+          <div class='call-to-action-image' id='image-preview-1'>
+            <label for="image-upload" id="image-label-1">Upload Image</label>
+            <input type="file" name="image" id="image-upload-1" />
+          </div>
           <div class ='call-to-action-title-encapsulate'>
             <textarea class='call-to-action-title' placeholder='Enter a Heading' rows= '2' maxlength="80"></textarea>
           </div>
@@ -137,11 +153,14 @@
             <textarea class='call-to-action-button' placeholder='Button Title' maxlength="20"></textarea>
           </div>
         </div>
-        
+
         <li>Message Carousel</li>
         <p>Use a carousel of messages to provide your users with options and interactive buttons.</p>
         <div class='carousel-container'>
-          <div class='carousel-image'></div>
+          <div class='carousel-image' id='image-preview-1'>
+            <label for="image-upload" id="image-label-1">Upload Image</label>
+            <input type="file" name="image" id="image-upload-1" />
+          </div>
           <div class ='carousel-title-encapsulate'>
             <textarea class='carousel-title' placeholder='Enter a Heading' rows= '2' maxlength="80"></textarea>
           </div>
@@ -152,7 +171,10 @@
           </div>
         </div>
         <div class='carousel-container'>
-          <div class='carousel-image'></div>
+          <div class='carousel-image' id='image-preview-2'>
+            <label for="image-upload" id="image-label-2">Upload Image</label>
+            <input type="file" name="image" id="image-upload-2" />
+          </div>
           <div class ='carousel-title-encapsulate'>
             <textarea class='carousel-title' placeholder='Enter a Heading' rows= '2' maxlength="80"></textarea>
           </div>
@@ -163,7 +185,10 @@
           </div>
         </div>
         <div class='carousel-container'>
-          <div class='carousel-image'></div>
+          <div class='carousel-image' id='image-preview-3'>
+            <label for="image-upload" id="image-label-3">Upload Image</label>
+            <input type="file" name="image" id="image-upload-3" />
+          </div>
           <div class ='carousel-title-encapsulate'>
             <textarea class='carousel-title' placeholder='Enter a Heading' rows= '2' maxlength="80"></textarea>
           </div>
@@ -182,6 +207,7 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.uploadPreview.min.js"></script>
 <script src="javascript/main.js"></script>
 </body>
 </html>
