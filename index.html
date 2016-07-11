@@ -182,12 +182,31 @@
 
     <div class="row objective u-max-full-width">
       <p>Send a message to your users acknowledging their action and describing next steps. Select your message type:</p>
-      <select class="u-max-full-width message-template-dropdown">
-        <option value="generic-template">Generic Template</option>
-        <option value="plain-text">Plain Text</option>
-      </select>
+      <div class="text-center">
+        <select class="u-max-full-width message-template-dropdown">
+          <option value="generic-template">Generic Template</option>
+          <option value="plain-text">Plain Text</option>
+        </select>
+      </div>
     </div>
 
+    <div class="row generic-template text-center">
+      <div class='carousel-container'>
+        <div class='carousel-image'></div>
+        <div class ='carousel-title-encapsulate'>
+          <textarea class='carousel-title' placeholder='Enter a Heading' rows= '4' maxlength="80"></textarea>
+        </div>
+        <div class="carousel-button-encapsulate">
+          <textarea class='carousel-button' placeholder='Button Title' maxlength="20"></textarea>
+          <textarea class='carousel-button' placeholder='Button Title' maxlength="20"></textarea>
+          <textarea class='carousel-button' placeholder='Button Title' maxlength="20"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="row plain-text text-center">
+      <textarea class='plain-text-area' placeholder='Enter a message... (i.e. "Thanks for your order!"' rows= '2' maxlength="80"></textarea>
+    </div>
   </div>
 
 <!-- End Document

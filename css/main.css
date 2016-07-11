@@ -211,6 +211,20 @@ ol li {
     min-height: 105px;
 }
 
+.plain-text-area {
+    border: solid;
+    border-width: 1px;
+    align-self: flex-start;
+    position: relative;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 900;
+    width: 270px;
+    padding: 20px;
+    text-align: left;
+    resize: none;
+}
+
 .carousel-button-encapsulate {
     border: none;
     background: transparent;
