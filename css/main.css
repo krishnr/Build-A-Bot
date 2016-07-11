@@ -215,7 +215,7 @@ ol li {
     width: 270px;
     text-align: center;
     resize: none;
-    max-height: 20px;
+    max-height: 30px;
 }
 
 .carousel-image {
@@ -302,5 +302,5 @@ ol li {
     width: 270px;
     text-align: center;
     resize: none;
-    max-height: 20px;
+    max-height: 30px;
 }
