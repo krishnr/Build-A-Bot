@@ -6,6 +6,11 @@ $(document).ready(function () {
     $('.product-sales').fadeOut('fast');
     $('.'+$(this).val()).fadeIn('slow');
   })
+  $('.message-template-dropdown').change(function () {
+    $('.generic-template').fadeOut('fast');
+    $('.plain-text').fadeOut('fast');
+    $('.'+$(this).val()).fadeIn('slow');
+  })
 });
 
 $('.business-name-input').keyup(function() {
