@@ -115,14 +115,30 @@ ol li {
 .call-to-action-title {
     border: none;
     align-self: flex-start;
+    margin: 0;
     position: relative;
     font-size: 1.5rem;
     color: black;
     font-weight: 900;
     width: 270px;
-    padding: 5px;
+    padding: 0, 5px;
     text-align: left;
     resize: none;
+    height: auto;
+}
+
+.call-to-action-subtitle {
+    border: none;
+    align-self: flex-start;
+    position: relative;
+    font-size: 1.25rem;
+    color: grey;
+    font-weight: 900;
+    width: 270px;
+    padding: 0, 5px;
+    text-align: left;
+    resize: none;
+    margin: 0;
 }
 
 .call-to-action-title-encapsulate {
@@ -156,15 +172,15 @@ ol li {
     border: none;
     background: transparent;
     position: relative;
-    top: 5px;
+    top: 15px;
+    margin-bottom: 40px;
     font-size: 1.75rem;
     color: #1787FB;
     font-weight: 500;
     width: 270px;
     text-align: center;
     resize: none;
-    min-height: 35px;
-    max-height: 50px;
+    max-height: 20px;
 }
 
 .carousel-image {
@@ -186,15 +202,32 @@ ol li {
 .carousel-title {
     border: none;
     align-self: flex-start;
+    margin: 0;
     position: relative;
     font-size: 1.5rem;
     color: black;
     font-weight: 900;
-    width: 270px;
-    padding: 5px;
+    width: 265px;
+    padding: 0, 5px;
     text-align: left;
     resize: none;
+    height: auto;
 }
+
+.carousel-subtitle {
+    border: none;
+    align-self: flex-start;
+    position: relative;
+    font-size: 1.25rem;
+    color: grey;
+    font-weight: 900;
+    width: 265px;
+    padding: 0, 5px;
+    text-align: left;
+    resize: none;
+    margin: 0;
+}
+
 .carousel-title-encapsulate {
     border: none;
     align-self: flex-start;
@@ -226,13 +259,13 @@ ol li {
     border: none;
     background: transparent;
     position: relative;
-    top: 5px;
+    top: 10px;
+    margin-bottom: 35px;
     font-size: 1.75rem;
     color: #1787FB;
     font-weight: 500;
     width: 270px;
     text-align: center;
     resize: none;
-    min-height: 35px;
-    max-height: 50px;
+    max-height: 20px;
 }
