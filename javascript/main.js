@@ -43,7 +43,7 @@ $(document).ready(function () {
     var textarea = $(this),
         numberOfLines = (textarea.val().match(/\n/g) || []).length + 1,
         maxRows = parseInt(textarea.attr('rows'));
-    
+
     if (event.which === 13 && numberOfLines === maxRows ) {
       return false;
     }
@@ -75,5 +75,40 @@ $(document).ready(function() {
     input_field: "#image-upload-4",
     preview_box: "#image-preview-4",
     label_field: "#image-label-4"
+  });
+  $.uploadPreview({
+    input_field: "#image-upload-5",
+    preview_box: "#image-preview-5",
+    label_field: "#image-label-5"
+  });
+  $.uploadPreview({
+    input_field: "#image-upload-6",
+    preview_box: "#image-preview-6",
+    label_field: "#image-label-6"
+  });
+  $.uploadPreview({
+    input_field: "#image-upload-7",
+    preview_box: "#image-preview-7",
+    label_field: "#image-label-7"
+  });
+  $.uploadPreview({
+    input_field: "#image-upload-8",
+    preview_box: "#image-preview-8",
+    label_field: "#image-label-8"
+  });
+  $.uploadPreview({
+    input_field: "#image-upload-9",
+    preview_box: "#image-preview-9",
+    label_field: "#image-label-9"
+  });
+  $.uploadPreview({
+    input_field: "#image-upload-10",
+    preview_box: "#image-preview-10",
+    label_field: "#image-label-10"
+  });
+  $.uploadPreview({
+    input_field: "#image-upload-11",
+    preview_box: "#image-preview-11",
+    label_field: "#image-label-11"
   });
 });
