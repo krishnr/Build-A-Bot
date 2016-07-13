@@ -1,6 +1,6 @@
 body {
     font-family: "Open Sans";
-    font-size: 2em;
+    font-size: 1.75em;
 }
 
 .text-center {
@@ -17,7 +17,7 @@ body {
 }
 
 ol li {
-    font-size: 4.0rem;
+    font-size: 3.0rem;
 }
 
 .get-started-img-container {
