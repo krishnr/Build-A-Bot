@@ -50,6 +50,17 @@ $(document).ready(function () {
   });
 });
 
+jsonObject = {}
+
+$('.business-name-input').each(function(e){
+    addToJsonArray(this);
+  });
+
+$('.call-to-action-title').each(function(e){
+    addToJsonArray(this);
+  });
+
+
 $(document).ready(function() {
   $.uploadPreview({
     input_field: "#image-upload-1",
@@ -112,3 +123,19 @@ $(document).ready(function() {
     label_field: "#image-label-11"
   });
 });
+
+function addToJsonArray(a) {
+  var value = $(a).val();
+  if (!value) {
+    value = $(a).attr("placeholder");
+  }
+  var titleId = $(a).attr("id");
+  $(a).on('change', function(e){
+    value = e.target.value;
+    titleId = e.target.id;
+    jsonObject[titleId] = value;
+    console.log(jsonObject);
+      });
+  jsonObject[titleId] = value;
+  console.log(jsonObject);
+}
