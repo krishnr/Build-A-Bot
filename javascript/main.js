@@ -60,6 +60,9 @@ $('.call-to-action-title').each(function(e){
     addToJsonArray(this);
   });
 
+$('.get-started-text').each(function(e){
+    addToJsonArray(this);
+  });
 
 $(document).ready(function() {
   $.uploadPreview({
