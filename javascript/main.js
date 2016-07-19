@@ -174,7 +174,6 @@ function addToJsonArray(a) {
       obj[titleId] = value;
       jsonObject.sell_products.push(obj)
     }
-    console.log(jsonObject);
       });
   if (titleId.indexOf("generate-leads") >= 0) {
     obj = {}
@@ -186,9 +185,12 @@ function addToJsonArray(a) {
     obj[titleId] = value;
     jsonObject.sell_products.push(obj)
   }
-  console.log(jsonObject);
 }
 
 $('#generate-json-button').on('click', function(){
   document.getElementById('json-data').innerHTML = JSON.stringify(jsonObject, undefined, 4);
+})
+
+$('#generate-json-button2').on('click', function(){
+  document.getElementById('json-data2').innerHTML = JSON.stringify(jsonObject, undefined, 4);
 })
