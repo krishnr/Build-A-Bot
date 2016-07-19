@@ -50,7 +50,7 @@ $(document).ready(function () {
   });
 });
 
-jsonObject = {generate_leads: [], sell_products: []}
+jsonObject = {generate_leads: {}, sell_products: {}}
 
 $('.business-name-input').each(function(e){
     addToJsonArray(this);
@@ -164,26 +164,30 @@ function addToJsonArray(a) {
   $(a).on('change', function(e){
     value = e.target.value;
     titleId = e.target.id;
-    if (titleId.indexOf("generate-leads") >= 0) {
-      obj = {}
-      obj[titleId] = value;
-      jsonObject.generate_leads.push(obj)
+
+    genLeadsIndex = titleId.indexOf("generate-leads");
+    sellsProdsIndex = titleId.indexOf("sell-products");
+
+    if (genLeadsIndex >= 0) {
+      genLeadsTitleId = titleId.substring(0, genLeadsIndex - 1);
+      jsonObject.generate_leads[genLeadsTitleId] = value;
     }
     else {
-      obj = {}
-      obj[titleId] = value;
-      jsonObject.sell_products.push(obj)
+      sellsProdsTitleId = titleId.substring(0, sellsProdsIndex - 1);
+      jsonObject.sell_products[sellsProdsTitleId] = value;
     }
       });
-  if (titleId.indexOf("generate-leads") >= 0) {
-    obj = {}
-    obj[titleId] = value;
-    jsonObject.generate_leads.push(obj)
+
+  genLeadsIndex = titleId.indexOf("generate-leads");
+  sellsProdsIndex = titleId.indexOf("sell-products");
+
+  if (genLeadsIndex >= 0) {
+    genLeadsTitleId = titleId.substring(0, genLeadsIndex - 1);
+    jsonObject.generate_leads[genLeadsTitleId] = value;
   }
   else {
-    obj = {}
-    obj[titleId] = value;
-    jsonObject.sell_products.push(obj)
+    sellsProdsTitleId = titleId.substring(0, sellsProdsIndex - 1);
+    jsonObject.sell_products[sellsProdsTitleId] = value;
   }
 }
 
