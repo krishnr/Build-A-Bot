@@ -50,9 +50,13 @@ $(document).ready(function () {
   });
 });
 
-jsonObject = {}
+jsonObject = {generate_leads: [], sell_products: []}
 
 $('.business-name-input').each(function(e){
+    addToJsonArray(this);
+  });
+
+$('.get-started-text').each(function(e){
     addToJsonArray(this);
   });
 
@@ -60,7 +64,31 @@ $('.call-to-action-title').each(function(e){
     addToJsonArray(this);
   });
 
-$('.get-started-text').each(function(e){
+$('.call-to-action-subtitle').each(function(e){
+    addToJsonArray(this);
+  });
+
+$('.call-to-action-button').each(function(e){
+    addToJsonArray(this);
+  });
+
+$('.carousel-title').each(function(e){
+    addToJsonArray(this);
+  });
+
+$('.carousel-subtitle').each(function(e){
+    addToJsonArray(this);
+  });
+
+$('.carousel-button').each(function(e){
+    addToJsonArray(this);
+  });
+
+$('.purchase-button').each(function(e){
+    addToJsonArray(this);
+  });
+
+$('.purchase-prompt').each(function(e){
     addToJsonArray(this);
   });
 
@@ -136,9 +164,31 @@ function addToJsonArray(a) {
   $(a).on('change', function(e){
     value = e.target.value;
     titleId = e.target.id;
-    jsonObject[titleId] = value;
+    if (titleId.indexOf("generate-leads") >= 0) {
+      obj = {}
+      obj[titleId] = value;
+      jsonObject.generate_leads.push(obj)
+    }
+    else {
+      obj = {}
+      obj[titleId] = value;
+      jsonObject.sell_products.push(obj)
+    }
     console.log(jsonObject);
       });
-  jsonObject[titleId] = value;
+  if (titleId.indexOf("generate-leads") >= 0) {
+    obj = {}
+    obj[titleId] = value;
+    jsonObject.generate_leads.push(obj)
+  }
+  else {
+    obj = {}
+    obj[titleId] = value;
+    jsonObject.sell_products.push(obj)
+  }
   console.log(jsonObject);
 }
+
+$('#generate-json-button').on('click', function(){
+  document.getElementById('json-data').innerHTML = JSON.stringify(jsonObject, undefined, 4);
+})

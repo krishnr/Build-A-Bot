@@ -70,7 +70,7 @@
           </div>
           <div class ='call-to-action-title-encapsulate'>
             <textarea class='call-to-action-title' id="call-to-action-title-generate-leads" data-limit-rows="true" placeholder='Insert bold value proposition!' rows= "2" maxlength="80"></textarea>
-            <textarea class='call-to-action-subtitle' data-limit-rows="true" placeholder='Enter one sentence description of service.' rows= "2" maxlength="80"></textarea>
+            <textarea class='call-to-action-subtitle' id="call-to-action-subtitle-generate-leads" data-limit-rows="true" placeholder='Enter one sentence description of service.' rows= "2" maxlength="80"></textarea>
           </div>
           <div class="call-to-action-button-encapsulate">
             <textarea class='call-to-action-button' id='call-to-action-button1-generate-leads' data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20">Get a free quote</textarea>
@@ -91,9 +91,9 @@
             <textarea class='carousel-subtitle' id='carousel1-subtitle-generate-leads' data-limit-rows="true" placeholder='Feature Description' rows= '2' maxlength="80"></textarea>
           </div>
           <div class="carousel-button-encapsulate">
-            <textarea class='carousel-button' id="carousel1-button1" data-limit-rows="true" rows = "1" maxlength="20">Learn More</textarea>
-            <textarea class='carousel-button' id="carousel1-button2" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
-            <textarea class='carousel-button' id="carousel1-button3" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
+            <textarea class='carousel-button' id="carousel1-button1-generate-leads" data-limit-rows="true" rows = "1" maxlength="20">Learn More</textarea>
+            <textarea class='carousel-button' id="carousel1-button2-generate-leads" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
+            <textarea class='carousel-button' id="carousel1-button3-generate-leads" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
           </div>
         </div>
         <div class='carousel-container'>
@@ -106,9 +106,9 @@
             <textarea class='carousel-subtitle' id='carousel2-subtitle-generate-leads' data-limit-rows="true" placeholder='Feature Description' rows= '2' maxlength="80"></textarea>
           </div>
           <div class="carousel-button-encapsulate">
-            <textarea class='carousel-button' id="carousel2-button1" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20">Learn More</textarea>
-            <textarea class='carousel-button' id="carousel2-button2" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
-            <textarea class='carousel-button' id="carousel2-button3" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
+            <textarea class='carousel-button' id="carousel2-button1-generate-leads" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20">Learn More</textarea>
+            <textarea class='carousel-button' id="carousel2-button2-generate-leads" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
+            <textarea class='carousel-button' id="carousel2-button3-generate-leads" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
           </div>
         </div>
         <div class='carousel-container'>
@@ -121,9 +121,9 @@
             <textarea class='carousel-subtitle' id='carousel3-subtitle-generate-leads' data-limit-rows="true" placeholder='See what our customers have to say.' rows= '2' maxlength="80"></textarea>
           </div>
           <div class="carousel-button-encapsulate">
-            <textarea class='carousel-button' id="carousel3-button1" data-limit-rows="true" rows = "1" maxlength="20">Learn More</textarea>
-            <textarea class='carousel-button' id="carousel3-button2" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
-            <textarea class='carousel-button' id="carousel3-button3" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
+            <textarea class='carousel-button' id="carousel3-button1-generate-leads" data-limit-rows="true" rows = "1" maxlength="20">Learn More</textarea>
+            <textarea class='carousel-button' id="carousel3-button2-generate-leads" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
+            <textarea class='carousel-button' id="carousel3-button3-generate-leads" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
           </div>
         </div>
 
@@ -145,20 +145,26 @@
               <input type="file" name="image" class='image-upload' id="image-upload-5" />
             </div>
             <div class ='carousel-title-encapsulate'>
-              <textarea class='carousel-title' placeholder='Enter a Heading (i.e. "Thank you!")' rows= '2' maxlength="80"></textarea>
-              <textarea class='carousel-subtitle' placeholder='Description of next steps' rows= '2' maxlength="80"></textarea>
+              <textarea class='carousel-title' id="post-cta-title-generate-leads" placeholder='Enter a Heading (i.e. "Thank you!")' rows= '2' maxlength="80"></textarea>
+              <textarea class='carousel-subtitle' id="post-cta-subtitle-generate-leads" placeholder='Description of next steps' rows= '2' maxlength="80"></textarea>
             </div>
             <div class="carousel-button-encapsulate">
-              <textarea class='carousel-button' maxlength="20">Sign up for Newsletter</textarea>
-              <textarea class='carousel-button' placeholder='Button Title' maxlength="20"></textarea>
-              <textarea class='carousel-button' placeholder='Button Title' maxlength="20"></textarea>
+              <textarea class='carousel-button' id="post-cta-sign-up1-generate-leads" maxlength="20">Sign up for Newsletter</textarea>
+              <textarea class='carousel-button' id="post-cta-sign-up2-generate-leads" placeholder='Button Title' maxlength="20"></textarea>
+              <textarea class='carousel-button' id="post-cta-sign-up3-generate-leads" placeholder='Button Title' maxlength="20"></textarea>
             </div>
           </div>
         </div>
 
         <div class="row plain-text text-center">
-          <textarea class='plain-text-area' placeholder='Enter a message... (i.e. "Thanks for your signing up!"' rows= '2' maxlength="80"></textarea>
+          <textarea class='plain-text-area' id="plain-text-area-generate-leads" placeholder='Enter a message... (i.e. "Thanks for your signing up!"' rows= '2' maxlength="80"></textarea>
         </div>
+
+        <li>Generate JSON</li>
+        <div class="row generic-template text-center">
+          <button id="generate-json-button">Generate JSON</button>
+        </div>
+        <pre id="json-data"></pre>
       </ol>
     </div>
 
@@ -183,12 +189,12 @@
           </div>
           <div class ='call-to-action-title-encapsulate'>
             <textarea class='call-to-action-title' id="call-to-action-title-sell-products" data-limit-rows="true" rows= "2" maxlength="80">Interested in this product?</textarea>
-            <textarea class='call-to-action-subtitle' data-limit-rows="true" rows= "2" maxlength="80">Product Description</textarea>
+            <textarea class='call-to-action-subtitle' id="call-to-action-subtitle-sell-products" data-limit-rows="true" rows= "2" maxlength="80">Product Description</textarea>
           </div>
           <div class="call-to-action-button-encapsulate">
-            <textarea class='call-to-action-button' data-limit-rows="true" rows = "1" maxlength="20">Yes! Shop Now.</textarea>
-            <textarea class='call-to-action-button' data-limit-rows="true" rows = "1" maxlength="20">No Show me others.</textarea>
-            <textarea class='call-to-action-button' data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
+            <textarea class='call-to-action-button' id='call-to-action-button1-sell-products' data-limit-rows="true" rows = "1" maxlength="20">Yes! Shop Now.</textarea>
+            <textarea class='call-to-action-button' id='call-to-action-button2-sell-products' data-limit-rows="true" rows = "1" maxlength="20">No Show me others.</textarea>
+            <textarea class='call-to-action-button' id='call-to-action-button3-sell-products' data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
           </div>
         </div>
 
@@ -200,13 +206,13 @@
             <input type="file" name="image" class='image-upload' id="image-upload-7" />
           </div>
           <div class ='carousel-title-encapsulate'>
-            <textarea class='carousel-title' data-limit-rows="true" placeholder='Product #1 Title' rows= '2' maxlength="80"></textarea>
-            <textarea class='carousel-subtitle' data-limit-rows="true" placeholder='Product Description' rows= '2' maxlength="80"></textarea>
+            <textarea class='carousel-title' id='carousel1-title-sell-products' data-limit-rows="true" placeholder='Product #1 Title' rows= '2' maxlength="80"></textarea>
+            <textarea class='carousel-subtitle' id='carousel1-subtitle-sell-products' data-limit-rows="true" placeholder='Product Description' rows= '2' maxlength="80"></textarea>
           </div>
           <div class="carousel-button-encapsulate">
-            <textarea class='carousel-button' data-limit-rows="true" rows = "1" maxlength="20">Add To Cart</textarea>
-            <textarea class='carousel-button' data-limit-rows="true" rows = "1" maxlength="20">Similar Products</textarea>
-            <textarea class='carousel-button' data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
+            <textarea class='carousel-button' id="carousel1-button1-sell-products" data-limit-rows="true" rows = "1" maxlength="20">Add To Cart</textarea>
+            <textarea class='carousel-button' id="carousel1-button2-sell-products" data-limit-rows="true" rows = "1" maxlength="20">Similar Products</textarea>
+            <textarea class='carousel-button' id="carousel1-button3-sell-products" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
           </div>
         </div>
         <div class='carousel-container'>
@@ -215,13 +221,13 @@
             <input type="file" name="image" class='image-upload' id="image-upload-8" />
           </div>
           <div class ='carousel-title-encapsulate'>
-            <textarea class='carousel-title' data-limit-rows="true" placeholder='Product #2 Title' rows= '2' maxlength="80"></textarea>
-            <textarea class='carousel-subtitle' data-limit-rows="true" placeholder='Product Description' rows= '2' maxlength="80"></textarea>
+            <textarea class='carousel-title' id='carousel2-title-sell-products' data-limit-rows="true" placeholder='Product #2 Title' rows= '2' maxlength="80"></textarea>
+            <textarea class='carousel-subtitle' id='carousel2-subtitle-sell-products' data-limit-rows="true" placeholder='Product Description' rows= '2' maxlength="80"></textarea>
           </div>
           <div class="carousel-button-encapsulate">
-            <textarea class='carousel-button' data-limit-rows="true" rows = "1" maxlength="20">Add To Cart</textarea>
-            <textarea class='carousel-button' data-limit-rows="true" rows = "1" maxlength="20">Similar Products</textarea>
-            <textarea class='carousel-button' data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
+            <textarea class='carousel-button' id="carousel2-button1-sell-products" data-limit-rows="true" rows = "1" maxlength="20">Add To Cart</textarea>
+            <textarea class='carousel-button' id="carousel2-button2-sell-products" data-limit-rows="true" rows = "1" maxlength="20">Similar Products</textarea>
+            <textarea class='carousel-button' id="carousel2-button3-sell-products" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
           </div>
         </div>
         <div class='carousel-container'>
@@ -230,13 +236,13 @@
             <input type="file" name="image" class='image-upload' id="image-upload-9" />
           </div>
           <div class ='carousel-title-encapsulate'>
-            <textarea class='carousel-title' data-limit-rows="true" placeholder='Product #3 Title' rows= '2' maxlength="80"></textarea>
-            <textarea class='carousel-subtitle' data-limit-rows="true" placeholder='Product Description' rows= '2' maxlength="80"></textarea>
+            <textarea class='carousel-title' id='carousel3-title-sell-products' data-limit-rows="true" placeholder='Product #3 Title' rows= '2' maxlength="80"></textarea>
+            <textarea class='carousel-subtitle' id='carousel3-subtitle-sell-products' data-limit-rows="true" placeholder='Product Description' rows= '2' maxlength="80"></textarea>
           </div>
           <div class="carousel-button-encapsulate">
-            <textarea class='carousel-button' data-limit-rows="true" rows = "1" maxlength="20">Add To Cart</textarea>
-            <textarea class='carousel-button' data-limit-rows="true" rows = "1" maxlength="20">Similar Products</textarea>
-            <textarea class='carousel-button' data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
+            <textarea class='carousel-button' id="carousel3-button1-sell-products" data-limit-rows="true" rows = "1" maxlength="20">Add To Cart</textarea>
+            <textarea class='carousel-button' id="carousel3-button2-sell-products" data-limit-rows="true" rows = "1" maxlength="20">Similar Products</textarea>
+            <textarea class='carousel-button' id="carousel3-button3-sell-products" data-limit-rows="true" placeholder='Button Title' rows = "1" maxlength="20"></textarea>
           </div>
         </div>
 
@@ -249,20 +255,20 @@
               <input type="file" name="image" class='image-upload' id="image-upload-10" />
             </div>
             <div class ='carousel-title-encapsulate'>
-              <textarea class='carousel-title' placeholder='Product Name' rows= '1' maxlength="80"></textarea>
-              <textarea class='carousel-subtitle' placeholder='Order Description (size, colour, etc)' rows= '2' maxlength="80"></textarea>
+              <textarea class='carousel-title' id='checkout-title-sell-products' placeholder='Product Name' rows= '1' maxlength="80"></textarea>
+              <textarea class='carousel-subtitle' id='checkout-subtitle-sell-products' placeholder='Order Description (size, colour, etc)' rows= '2' maxlength="80"></textarea>
             </div>
             <div class="carousel-button-encapsulate">
-              <textarea class='carousel-button' maxlength="20">Remove From Cart</textarea>
-              <textarea class='carousel-button' maxlength="20">+ Increase Quantity</textarea>
-              <textarea class='carousel-button' maxlength="20">- Reduce Quantity</textarea>
+              <textarea class='carousel-button' id="checkout-button1-sell-products" maxlength="20">Remove From Cart</textarea>
+              <textarea class='carousel-button' id="checkout-button1-sell-products" maxlength="20">+ Increase Quantity</textarea>
+              <textarea class='carousel-button' id="checkout-button1-sell-products" maxlength="20">- Reduce Quantity</textarea>
             </div>
           </div>
         </div>
         <div class="text-center">
           <div class="purchase text-center">
-            <textarea class='purchase-prompt' placeholder='Ready to purchase?' rows= '2' maxlength="80"></textarea>
-            <textarea class='purchase-button' maxlength="20">Pay For Order</textarea>
+            <textarea class='purchase-prompt' id="purchase-prompt-sell-products" placeholder='Ready to purchase?' rows= '2' maxlength="80"></textarea>
+            <textarea class='purchase-button' id="purchase-button-sell-products" maxlength="20">Pay For Order</textarea>
           </div>
         </div>
 
@@ -284,13 +290,13 @@
               <input type="file" name="image" class='image-upload' id="image-upload-11" />
             </div>
             <div class ='carousel-title-encapsulate'>
-              <textarea class='carousel-title' placeholder='Enter a Heading (i.e. "Thank you!")' rows= '2' maxlength="80"></textarea>
-              <textarea class='carousel-subtitle' placeholder='Description of next steps' rows= '2' maxlength="80"></textarea>
+              <textarea class='carousel-title' id="post-cta-title-sell-products" placeholder='Enter a Heading (i.e. "Thank you!")' rows= '2' maxlength="80"></textarea>
+              <textarea class='carousel-subtitle' id="post-cta-subtitle-sell-products" placeholder='Description of next steps' rows= '2' maxlength="80"></textarea>
             </div>
             <div class="carousel-button-encapsulate">
-              <textarea class='carousel-button' maxlength="20">Sign up for Newsletter</textarea>
-              <textarea class='carousel-button' placeholder='Button Title' maxlength="20"></textarea>
-              <textarea class='carousel-button' placeholder='Button Title' maxlength="20"></textarea>
+              <textarea class='carousel-button' id="post-cta-sign-up1-sell-products" maxlength="20">Sign up for Newsletter</textarea>
+              <textarea class='carousel-button' id="post-cta-sign-up2-sell-products" placeholder='Button Title' maxlength="20"></textarea>
+              <textarea class='carousel-button' id="post-cta-sign-up3-sell-products" placeholder='Button Title' maxlength="20"></textarea>
             </div>
           </div>
         </div>
